@@ -1,0 +1,20 @@
+header {
+    background: linear-gradient(29deg, #9ebf43 0%, #bddf61 100%);
+    border-radius: 0 0 40px 40px;
+}
+
+header .top-text {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 129%;
+    text-align: center;
+    color: #fff;
+    max-width: 29rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 1.4rem;
+}
+header .title {
+    -webkit-text-fill-color: inherit;
+}

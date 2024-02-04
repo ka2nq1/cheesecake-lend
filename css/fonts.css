@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'JOURNALISM';
+    src: url('../fonts/JOURNALISM.eot');
+    src: local('../fonts/JOURNALISM'),
+        url('../fonts/JOURNALISM.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/JOURNALISM.woff2') format('woff2'),
+        url('../fonts/JOURNALISM.woff') format('woff'),
+        url('../fonts/JOURNALISM.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Miama Nueva';
+	src: url('../fonts/MiamaNueva.woff2') format('woff2'), url('../fonts/MiamaNueva.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
