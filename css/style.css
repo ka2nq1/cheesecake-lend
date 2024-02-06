@@ -73,8 +73,79 @@ header li p {
     margin-bottom: 3rem;
 }
 
-.author img {
-    width: 100%;
+.author .author-bg {
+    background-image: url(../images/person-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 36rem 2.7rem 3.1rem 2.7rem;
+    position: relative;
+}
+
+.author .person {
+    width: 29rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.author .name {
+    font-family: var(--font3);
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 145%;
+    letter-spacing: 0.16em;
+    text-align: center;
+    background: linear-gradient(46deg, #9ebf43 0%, #9ebf43 26.5%, #c0e163 51%, #9ebf43 73%, #9ebf43 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 6.2rem;
+    right: 2.9rem;
+    z-index: 1;
+}
+
+.author .mishlen-wrap {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 3.4rem;
+    z-index: 1;
+}
+
+.author .mishlen-wrap p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 135%;
+    color: #fff;
+}
+
+.author .mishlen-wrap img {
+    width: 6.5rem;
+}
+
+.author ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.author li {
+    display: flex;
+    align-items: baseline;
+    gap: 1.6rem;
+}
+
+.author li p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 129%;
+    color: #fff;
 }
 
 .parts {
