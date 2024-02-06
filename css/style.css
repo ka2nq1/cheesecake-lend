@@ -1,9 +1,12 @@
 .bg {
     background-image: url(../images/bg.jpg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position-y: 1.5rem;
     margin-top: -12rem;
+    position: relative;
+    z-index: 1;
+    background-color: #ffff;
 }
 
 header {
@@ -11,7 +14,7 @@ header {
     background: linear-gradient(29deg, #9ebf43 0%, #bddf61 100%);
     border-radius: 0 0 40px 40px;
     padding-bottom: 6.4rem;
-    z-index: 1;
+    z-index: 2;
 }
 
 header .top-text {
@@ -51,7 +54,7 @@ header li {
 
 header li img {
     width: 7rem;
-    height: fit-content;
+    height: 100%;
 }
 
 header li p {
@@ -213,5 +216,228 @@ header li p {
     text-transform: uppercase;
     text-align: center;
     color: #a6c74a;
+}
 
+.program {
+    margin-top: -2rem;
+    padding-top: 9.7rem;
+    background: #fff;
+}
+
+.program .title {
+    margin-bottom: 2.4rem;
+}
+
+.program ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3.7rem;
+}
+
+.program li:not(:last-child) {
+    border-radius: 15px;
+    padding: 4rem 3.5rem 3.5rem 3.5rem;
+    border: 2px solid transparent;
+    background: linear-gradient(#fff, #fff) padding-box, linear-gradient(to right, #9ebf43, #bddf61) border-box;
+}
+
+.program .module {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 1.7rem;
+    line-height: 165%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #a6c74a;
+    margin-bottom: 3.4rem;
+}
+
+.program .module span {
+    display: inline-block;
+    border-radius: 5rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(29deg, #9ebf43 0%, #bddf61 100%);
+    color: #ffff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 165%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+
+}
+
+.program li .text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 129%;
+    color: #141414;
+    margin-bottom: 2.4rem;
+    max-width: 24rem;
+}
+
+.program li img {
+    width: 100%;
+}
+
+.program .bonus-module {
+    background: linear-gradient(29deg, #9ebf43 0%, #bddf61 100%);
+    border-radius: 15px;
+    padding: 4rem 4.3rem 4.3rem 4.3rem;
+}
+
+.program .bonus-module .module {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3.2rem;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: 118%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+    max-width: 16rem;
+
+}
+
+.program .bonus-module .module span {
+    display: inline-block;
+    border-radius: 5rem;
+    min-width: 3.2rem;
+    height: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff09f;
+    color: #a6c74a;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 165%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.program .description {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.program .description p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 125%;
+    color: #fff;
+    max-width: 19.4rem;
+}
+
+.program .description img {
+    margin-top: 0.1rem;
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.FAQ {
+    padding-top: 7rem;
+}
+
+.FAQ .title {
+    max-width: 25rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+.FAQ .accordion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.FAQ .accordion-item {
+    border-radius: 10px;
+    transition: max-height 0.4s ease-out;
+}
+
+.FAQ .accordion-header {
+    position: relative;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 10px;
+    padding: 2rem 6rem 2rem 2.4rem;
+    border: 1px solid transparent;
+    background: linear-gradient(#fff, #fff) padding-box, linear-gradient(to right, #9ebf43, #bddf61) border-box;
+}
+
+.FAQ .accordion-header:before {
+    content: '';
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url(../images/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 2.8rem;
+    top: 2.2rem;
+}
+
+.FAQ .accordion-header p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 133%;
+    color: #000;
+}
+
+.FAQ .active .accordion-header:before {
+    background-image: url(../images/arrow-up.svg);
+}
+
+.FAQ .active .accordion-header {
+    background: transparent;
+    border: none;
+    border-radius: 0 0 0 0;
+    border-bottom: 1px solid #adce53;
+}
+
+.FAQ .active .accordion-header p {
+    color: #fff;
+}
+
+.FAQ .active {
+    background: #9ebf43;
+}
+
+.FAQ .active .accordion-content {
+    max-height: 50rem;
+    padding: 2rem;
+}
+
+.FAQ .accordion-content {
+    overflow: hidden;
+    padding: 0;
+    max-height: 0;
+}
+
+.FAQ .accordion-content p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 154%;
+    color: #fff;
 }
